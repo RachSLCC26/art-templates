@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff1d8;
+    color: rgb(78, 76, 76);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff6b6b !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: rgb(78, 76, 76) !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #771f0f !important;
+}
+
+/* Call to Action (CTA) */
+.cta {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ff6b6b, #ffe66d);
+    color: rgb(46, 46, 46);
+    font-size: 2rem;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta button {
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+    color: #ff6b6b;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: #ffe66d;
+    color: #333;
+}
+
+/* Featured Section */
+.featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.featured-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.featured-item:hover {
+    transform: translateY(-5px);
+}
+
+.featured img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#section-2 {
+    background-color: #ffe66d; /* Light yellow background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+/* Optional Custom Styling for Shop Page
+.card-img-top {
+    max-height: 300px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff6b6b;
+}
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+.card-title {
+    font-size: 1.2rem;
+    color: #ff6b6b;
+} */
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}

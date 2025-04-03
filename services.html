@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servies</title>
+    <title>Services</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+      <style>
+        /* Service Page Specific Styles */
+
+        /* Center and style the h1 without a border */
+        h1 {
+          text-align: center;
+          padding: 20px;
+          background-color: rgb(248, 202, 141);
+          border-radius: 10px; /* Rounded corners */
+          margin-bottom: 30px; /* Space below the h1 */
+          font-size: 3rem; /* Adjust font size as needed */
+          box-shadow: 0px 4px 8px rgba(236, 147, 147, 0.1); /* Light shadow for subtle effect */
+        }
+
+        /* Style for h2 - remove bold */
+        h2 {
+          font-weight: normal; /* Remove bold */
+          font-size: 1.25rem; /* Adjust font size if needed */
+          margin-bottom: 10px; /* Add space between the h2 and its content */
+        }
+
+      </style>
 </head>
 <body>
    <header>
@@ -50,20 +72,32 @@
                 <h1>We offer a variety of digital templates and creative resources to make life easier and more fun</h1>
             </div>
         </section>
+
+        <!-- Services Section -->
         <section>
-            <div>
-                <h2>Printable Planners & Checklists: Stay organized with beautifully designed planning tools</h2>
-                <img src="/pictures/Firefly a busy mom who turned her passion for art into a beautiful, downloadable template that she’s.jpg" alt="Mom drawing">
+            <div class="container">
+                <div class="row">
+                    <!-- Service 1 -->
+                    <div class="col-md-4">
+                        <h2>Printable Planners & Checklists: Stay organized with beautifully designed planning tools</h2>
+                        <img src="/pictures/Firefly a busy mom who turned her passion for art into a beautiful, downloadable template that she’s.jpg" alt="Mom drawing" class="img-fluid">
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="col-md-4">
+                        <h2>Digital Art Templates: Get creative with easy-to-use digital design assets</h2>
+                        <img src="/pictures/Firefly -A close-up of a hand attempting to draw a complex design freehand, with visible eraser mark.jpg" alt="Mom attempting art" class="img-fluid">
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="col-md-4">
+                        <h2>Mom-Friendly Business Resources: Tools to help moms balance work, creativity, and family life</h2>
+                        <img src="/pictures/Firefly Illustrated personas of your target audience (e.g., a busy mom, a beginner artist, a teacher.jpg" alt="A Community of moms" class="img-fluid">
+                    </div>
+                </div>
             </div>
-            <div>
-              <h2>Digital Art Templates: Get creative with easy-to-use digital design assets</h2>
-              <img src="/pictures/Firefly -A close-up of a hand attempting to draw a complex design freehand, with visible eraser mark.jpg" alt="Mom attempting art">
-          </div>
-          <div>
-            <h2>Mom-Friendly Business Resources: Tools to help moms balance work, creativity, and family life</h2>
-            <img src="/pictures/Firefly Illustrated personas of your target audience (e.g., a busy mom, a beginner artist, a teacher.jpg" alt="A Community of moms">
-        </div>
-          </section>
-   </main> 
+        </section>
+   </main>
+   <footer class="footer">
+    <p>Copyright 2025 Animation Class</p>
+</footer>
 </body>
 </html>
