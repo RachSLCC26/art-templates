@@ -1,111 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="/css/style.css">
-    <style>
-      /* About Page Specific Styles */
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Art At Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
 
-/* Style for the main heading */
-.about-section h1 {
-    text-align: center;
-    background-color: rgb(248, 202, 141); /* Light background color */
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    font-size: 3rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
-}
-
-/* Profile image */
-.about-section img {
-    max-width: 100%; /* Ensure the image is responsive */
-    height: auto;
-    border-radius: 50%; /* Makes the image round */
-    margin-bottom: 20px;
-}
-
-/* Style for h2 (subheading) */
-.about-section h2 {
-    font-size: 2rem;
-    font-weight: normal;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Paragraph text */
-.about-section p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .about-section .row {
-        text-align: center;
+  <style>
+    .navbar.bg-body-tertiary {
+      background-color: #b2f0ed !important;
+      border-bottom: 2px solid rgb(2, 255, 255);
     }
-    .about-section .col-md-4, .about-section .col-md-8 {
-        margin-bottom: 20px;
+  
+    .navbar-nav .nav-link {
+      color: #00554e;
+      font-weight: bold;
     }
+  
+    .navbar-nav .nav-link:hover {
+      color: #016e81;
+    }
+  
+    main {
+      margin-top: 2rem; /* Adds space under navbar */
+    }
+  
+    .about-section {
+      padding: 3rem 0;
+      background-color: #f7fcfc;
+      color: #004944;
+    }
+  
+    .about-section h2 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #016e81;
+    }
+  
+    .about-section p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+  
+    footer {
+      background-color: #b2f0ed;
+      padding: 1.5rem 0;
+      text-align: center;
+      font-size: 1rem;
+      color: #00554e;
+      border-top: 2px solid rgb(2, 255, 255);
+    }
+  
+    footer p {
+      margin: 0;
+    }
+
+.quote-section {
+  padding: 3rem 0;
+  background-color: #e8fafa;
+  color: #004944;
 }
 
-    </style>
+.pull-quote {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-left: 4px solid #00c2b2;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-caption {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #00726c;
+}
+
+.quote-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 4px solid #00c2b2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  </style>
+
 </head>
 <body>
-   <header>
-       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-           <div class="container-fluid">
-             <a class="navbar-brand" href="/index-1.html">Homepage</a>
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-               <ul class="navbar-nav">
-                 <li class="nav-item">
-                   <a class="nav-link active" aria-current="page" href="/about.html">About</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="/shop.html">Shop</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="index-1.html#section-2">More</a>
-                 </li>
-               </ul>
-             </div>
-           </div>
-         </nav>
-   </header>
-   <main>
-        <section class="about-section">
-            <h1>About</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="/pictures/Firefly a busy mom who turned her passion for art into a beautiful, downloadable template that she’s.jpg" alt="Your Name" class="img-fluid rounded-circle">
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Hi, I'm Rachel Nelson</h2>
-                        <p>Welcome to my little corner of the internet! I’m a stay-at-home mama, and I’m passionate about art, design, organization, creativity, etc. This website is a reflection of my love for design and my journey to create something that brings value to others.</p>
-                        <p>I started this project because I believe in the power of creativity, organization, and helping others. I wanted to share my ideas, my work, and the resources I’ve created to help others like you. Whether you’re here to find inspiration, educational content, etc. or just to learn more about me, I’m so glad you stopped by!</p>
-                        <p>A little about me: I’m passionate about helping people embrace their creativity, especially in the chaos of everyday life. I believe that even in our busiest moments, we can find time for the things that bring us joy—whether it’s making something beautiful or simply organizing our day. This website is my way of sharing that mission.
-                          When I’m not working, you can usually find me crocheting, riding my bike, or daydreaming about my next big adventure with my family. I believe creativity is a lifelong journey, and I’m always looking for new ways to express myself and inspire others along the way.</p>
-                        <p>"I believe that art is a form of self-expression that is accessible to everyone. It’s not just about creating something beautiful—it’s about capturing emotions, telling stories, and finding joy in the process. Whether it’s through design, drawing, or simply organizing your space, art has the power to inspire, connect, 
-                          and bring peace to our busy lives.</p>
-                        <p>Thank you for visiting, and I hope you find something here that sparks your creativity or helps you on your own journey!</p>
-                      </div>
-                </div>
-            </div>
-        </section>
-   </main> 
-   <footer class="footer">
-    <p>Copyright 2025 Animation Class</p>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index-1.html">Homepage</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/blog.html">Art Ideas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index-1.html#section-2">More</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button"
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                More Items
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/shop.html">Shop</a></li>
+                <li><a class="dropdown-item" href="/contact.html">Contact</a></li>
+                <li><a class="dropdown-item" href="/account.html">Account</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <img src="/pictures/Firefly a busy mom who turned her passion for art into a beautiful, downloadable template that she’s.jpg"
+                 alt="Rachel Nelson"
+                 class="img-fluid rounded-circle shadow">
+          </div>
+          <div class="col-md-8">
+            <h2>Hi, I'm Rachel</h2>
+            <p>
+              I’m a mama, maker, and creative soul who believes that art has the power to bring people together — especially at home with our littles. I started this space to share meaningful art ideas, printable templates, and fun creative moments you can do side-by-side with your kids.
+            </p>
+            <p>
+              This isn’t about being perfect. It’s about showing up with love, some paint-stained fingers, and the desire to connect through creativity — whether it’s five minutes before bedtime or a rainy afternoon with nothing planned.
+            </p>
+            <p>
+              You’ll find a mix of downloadable templates, inspiration for simple art projects, and encouragement for embracing the mess and magic of creativity at home.
+            </p>
+            <p>
+              When I’m not creating, I’m probably chasing toddlers, crocheting something cuddly, or dreaming up our next big family adventure.
+            </p>
+            <p>
+              Thanks for stopping by — I hope you find something here that sparks joy, connection, and maybe even a new tradition with your little ones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quote-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <blockquote class="pull-quote">
+              “Creative moments don't have to be perfect — they just have to be shared.”
+            </blockquote>
+            <p class="quote-caption">– Unknown</p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="/pictures/Firefly -A close-up of a hand attempting to draw a complex design freehand, with visible eraser mark.jpg" alt="Artistic home moment" class="quote-img img-fluid rounded-circle">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+  <p>Copyright 2025 Animation Class</p>
 </footer>
 </body>
 </html>
