@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Shop page showcasing a variety of black and white art drawings including dinosaurs, sunflowers, elephants, and more." />
+  <meta name="description" content="Shop page showcasing a variety of black and white art drawings and digital downloads." />
   <title>Shop</title>
 
   <!-- Bootstrap CSS -->
@@ -12,14 +12,13 @@
         rel="stylesheet" 
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
         crossorigin="anonymous" />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
         <a class="navbar-brand" href="/index-1.html">Homepage</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
@@ -27,19 +26,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/blog.html">Art Ideas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/blog.html">Art Ideas</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button"
-                 data-bs-toggle="dropdown" aria-expanded="false">
-                More Items
-              </a>
+                 data-bs-toggle="dropdown" aria-expanded="false">More Items</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="/shop.html">Shop</a></li>
                 <li><a class="dropdown-item" href="/contact.html">Contact</a></li>
@@ -50,70 +42,124 @@
         </div>
       </div>
     </nav>
+    <style>
+      .card-img-top {
+  height: 300px;
+  object-fit: contain;
+  background-color: #f8f9fa; /* light gray background to fill space */
+  padding: 10px;
+}
+
+      .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+    </style>
   </header>
 
-  <main class="container my-4">
-    <section>
-      <h1 class="mb-4">Products</h1>
-      <p class="mb-5">Browse our collection of high-contrast, black-and-white illustrations perfect for prints, gifts, and decorations.</p>
+  <!-- Main Content -->
+  <main class="container my-5">
+    <section class="text-center mb-5">
+      <h1 class="fw-bold">Artwork</h1>
+      <p class="text-muted">High-contrast, black-and-white illustrations perfect for prints, gifts, and decor.</p>
     </section>
 
-    <section>
-      <div class="row g-4">
-        <!-- Product 1 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="pictures/dino.jpg" class="card-img-top" alt="Black and white drawing of a dinosaur">
-            <div class="card-body">
-              <h5 class="card-title">Dinosaur</h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="pictures/Sunflower.jpg" class="card-img-top" alt="Black and white drawing of sunflowers">
-            <div class="card-body">
-              <h5 class="card-title">Sunflowers</h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="pictures/full buttrtfly on flower.jpg" class="card-img-top" alt="Black and white drawing of a butterfly on a flower">
-            <div class="card-body">
-              <h5 class="card-title">Butterfly on Flowers</h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="pictures/babyelephant.jpg" class="card-img-top" alt="Black and white drawing of a cute baby elephant sitting">
-            <div class="card-body">
-              <h5 class="card-title">Baby Elephant</h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <img src="pictures/girlinrain.jpg" class="card-img-top" alt="Black and white drawing of a girl with an umbrella in the rain">
-            <div class="card-body">
-              <h5 class="card-title">Girl In Rain</h5>
-            </div>
+    <!-- Product Grid -->
+    <div class="row g-4">
+      <!-- Product Card -->
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="pictures/dino.jpg" class="card-img-top" alt="Black and white drawing of a dinosaur">
+          <div class="card-body">
+            <h5 class="card-title">Dinosaur</h5>
           </div>
         </div>
       </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="pictures/Sunflower.jpg" class="card-img-top" alt="Black and white drawing of sunflowers">
+          <div class="card-body">
+            <h5 class="card-title">Sunflowers</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="pictures/full buttrtfly on flower.jpg" class="card-img-top" alt="Butterfly on a flower">
+          <div class="card-body">
+            <h5 class="card-title">Butterfly on Flowers</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="pictures/babyelephant.jpg" class="card-img-top" alt="Baby elephant sitting">
+          <div class="card-body">
+            <h5 class="card-title">Baby Elephant</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <img src="pictures/girlinrain.jpg" class="card-img-top" alt="Girl with umbrella in the rain">
+          <div class="card-body">
+            <h5 class="card-title">Girl In Rain</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download Section -->
+    <hr class="my-5" />
+    <section class="text-center mb-4">
+      <h2 class="fw-bold">Download Now</h2>
+      <p class="text-muted">Grab your free art files and sample downloads instantly!</p>
     </section>
+
+    <div class="row g-4 justify-content-center mb-5">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Daily Doodles Calendar</h5>
+            <p class="card-text text-muted">PNG · 1.2 MB</p>
+            <a href="downlaod/Daily Doodles Calendar.pdf" download class="btn btn-primary">Download Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Daily Thankful and Thoughs Planner</h5>
+            <p class="card-text text-muted">PDF · 800 KB</p>
+            <a href="downlaod/Add a heading.pdf" download class="btn btn-primary">Download Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Cozy Critters Coloring Pack</h5>
+            <p class="card-text text-muted">ZIP · 10 MB</p>
+            <a href="downlaod/Cozy Critters Coloring Pack.pdf" download class="btn btn-primary">Download Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
-  <footer class="text-center py-4 bg-light mt-5">
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light">
     <p class="mb-0">&copy; 2025 Animation Class. All rights reserved.</p>
   </footer>
 
@@ -123,4 +169,3 @@
           crossorigin="anonymous"></script>
 </body>
 </html>
-
