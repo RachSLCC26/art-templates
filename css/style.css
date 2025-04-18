@@ -1,314 +1,126 @@
-/* Redoing the whole thing!!! 
-
-/* General Styles 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff1d8;
-    color: rgb(78, 76, 76);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #004e4e;
 }
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-main{
-    padding-inline: 5%;
-}
-
-/* Navbar Styles 
 
 .navbar {
-    background-color: #ff6b6b !important;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 1rem;
 }
 
-.navbar-brand, .nav-link {
-    color: rgb(78, 76, 76) !important;
-    font-weight: bold;
-    transition: color 0.3s ease;
+.navbar .navbar-brand {
+  color: #04767e; 
 }
 
-.nav-link:hover {
-    color: #771f0f !important;
+.navbar .navbar-nav .nav-link {
+  color: #036970;
 }
 
-.banner{
-    background-color: aqua;
+.navbar .navbar-nav .nav-link:hover {
+  color: #08efff;
+}
+
+header {
+  background-color: #004e4e;
+  padding: 2rem;
+  text-align: center;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+
+  .section-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #00a0b0;
+    width: 0;
+    animation: strokeText 3s steps(40, end) forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+   @keyframes strokeText {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  .card-group {
     display: flex;
-    grid-template-columns: 1fr 1fr;
-    margin-block: 4rem;
-    border-radius: 1rem;
-    overflow: hidden;
-
-.banner-textblock{
-    padding: 2rem;
-    order: 1;
-}
-
-.banner-image{
-    order: 2;
-
-    img{
-        height: 100%;
-        object-position: cover;
-    }
-}
-
-@media (max-width: 768px){
-    grid-template-columns: 1fr;
-    margin-block: 2rem;
-}
-
-&.banner-reverse{
-    .banner-textblock{
-        padding: 2rem;
-        order: 2;
-    }
-    
-    .banner-image{
-        order: 1;
-    }  
-}
-}
-
-.card{
-    display: grid;
+    flex-wrap: wrap;
     gap: 1rem;
-    grid-template-columns: repeat(3,1fr);
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-
-/* Call to Action (CTA) 
-
-.cta {
-    text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(135deg, #ff6b6b, #ffe66d);
-    color: rgb(46, 46, 46);
-    font-size: 2rem;
-    border-radius: 10px;
-    margin: 40px auto;
-    max-width: 900px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.cta button {
-    padding: 15px 30px;
-    border: none;
-    background-color: white;
-    color: #ff6b6b;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.cta button:hover {
-    background-color: #ffe66d;
-    color: #333;
-}
-
-/* Featured Section 
-
-.featured {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.featured-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.featured-item:hover {
-    transform: translateY(-5px);
-}
-
-.featured img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-#section-2 {
-    background-color: #ffe66d; 
-    
-    /* Light yellow background 
-    
-    padding: 50px 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 40px auto;
-    max-width: 1000px;
-}
-
-/* Optional Custom Styling for Shop Page
-.card-img-top {
-    max-height: 300px;
-    object-fit: cover;
-    border-bottom: 2px solid #ff6b6b;
-}
-.card-body {
-    text-align: center;
-    padding: 15px;
-}
-.card-title {
-    font-size: 1.2rem;
-    color: #ff6b6b;
-} 
-
-/* Footer 
-
-.footer {
-    text-align: center;
-    background-color: #ff6b6b;
-    color: white;
-    padding: 20px;
-    margin-top: 40px;
-}
-*/
-
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8fdff;
-    color: rgb(0, 0, 0);
-}
-
-img{
-    width: 100%;
-    height: auto;
-} 
-
-main{
-    padding-inline: 5%;
-}
-
-  .card-group {
-    margin-top: 40px;
+    justify-content: center;
   }
 
-  .section-img {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-
-  .section-content {
-    padding: 20px;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.1rem;
-  }
-
-  .hero-section {
-    background-color: rgb(151, 173, 168);
-    border-radius: 1rem;
-    overflow: hidden;
-    margin-block: 4rem;
-    padding: 2rem 1rem;
-  }
-  
-  .hero-section .section-content {
-    padding: 2rem;
-  }
-  
-  .hero-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-section {
-      margin-block: 2rem;
-    }
-  
-    .hero-section .row {
-      flex-direction: column;
-    }
-  
-    .hero-section .col-md-6 {
-      width: 100%;
-    }
-  }
-
-  .card-group {
-    margin-block: 4rem;
-  }
-  
   .card {
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    text-align: center;
+    position: relative;
     transition: transform 0.3s ease;
   }
-  
+
   .card:hover {
     transform: translateY(-5px);
   }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
+
+  .card:hover::after {
+    content: "🎉 Time to get creative!";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    top: 10px;
+    left: 10px;
+    font-size: 0.9rem;
+    color: #004e4e;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  .seasonal-section {
+    background: linear-gradient(to bottom, #e0fbf8, #fef9f2);
+    border-top: 2px dashed #00cccc;
+    border-bottom: 2px dashed #00cccc;
+    animation: fadeIn 2s ease;
   }
   
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+  .season-card {
+    background-color: #ffffffdd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
   }
   
-  .card-text {
-    font-size: 0.95rem;
-    color: #555;
+  .season-card:hover {
+    transform: translateY(-5px);
   }
   
-  @media (max-width: 768px) {
-    .card-img-top {
-      height: 160px;
-    }
+  .season-card h5 {
+    color: #008c99;
+    font-weight: 600;
   }
   
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .season-card p {
+    font-size: 1rem;
+    color: #444;
+  }
 
   footer {
-    background-color: #f8f9fa;
-    padding: 20px;
+    background-color: #004e4e;
+    color: white;
     text-align: center;
-    margin-top: 60px;
+    padding: 1rem;
+    font-size: 0.8rem;
   }
