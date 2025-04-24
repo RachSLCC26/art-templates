@@ -34,7 +34,7 @@ header {
   }
 
   .section-content h2 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2vw, 2rem); /* Responsive font size */
     margin-bottom: 1rem;
     overflow: hidden;
     white-space: nowrap;
@@ -73,6 +73,7 @@ header {
 
   .card:hover {
     transform: translateY(-5px);
+    will-change: transform; /* Added for better animation performance */
   }
 
   .card:hover::after {
